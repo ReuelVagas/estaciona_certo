@@ -1,18 +1,30 @@
-import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import React, { useEffect, useCallback, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { withTheme, Theme } from 'react-native-elements';
 import { HomeTemplate } from '../../components/templates/HomeTemplate';
 import { DefaultProps } from '../../util/defaultProps';
-import { View, ActivityIndicator } from 'react-native';
 // import homeFetch from '../../store/actions/HomeActions';
 
 interface Props extends DefaultProps {
     theme: Theme<any>
 }
 
-export const HomeScreen = ({ theme }: Props) => {
-    const data: string[] = ['teste', 'teste'];
+const HomeScreenFun = ({ theme }: Props) => {
+    const dispatch = useDispatch();
+    const [data, setData] = useState();
 
-    return <View><ActivityIndicator /></View>;
+    const buscaTaloesDoDia = useCallback(
+        async () => {
+            const result = ['rete', 'radas'];
+            setData(result);
+        }, []
+    );
+
+    useEffect(() => {
+
+    },[]);
+
+    return <HomeTemplate theme={theme} data={data} />;
 }
+
+export const HomeScreen = withTheme(HomeScreenFun);
