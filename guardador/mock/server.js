@@ -3,7 +3,9 @@ const jsonServer = require('json-server');
 
 const path = require('path');
 
-const rota = {};
+const rota = {
+    ...require(path.join(__dirname, 'rotas/taloes.json'))
+};
 
 const server = jsonServer.create();
 const router = jsonServer.router(rota);
