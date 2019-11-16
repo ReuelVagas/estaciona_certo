@@ -46,7 +46,7 @@ const createTabNavigationOptions = ({ navigation }: Props) => ({
 });
 
 export const tabBarOptions = {
-    activeTintColor: '#3498db',
+    activeTintColor: '#7CAC5D',
     inactiveTintColor: '#888888',
     gesturesEnabled: false,
     style: {

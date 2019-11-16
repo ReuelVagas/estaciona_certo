@@ -1,7 +1,7 @@
 import React from 'react';
 import { TemplateOrganism } from '../../organisms/TemplateOrganism';
 import { Theme } from 'react-native-elements';
-// import { FeedOrganism } from '../../organisms/FeedOrganism';
+import { FeedOrganism } from '../../organisms/FeedOrganism';
 
 interface Props {
     theme: Theme<any>;
@@ -12,8 +12,7 @@ export const HomeTemplate = ({ data, theme }: Props) => {
 
     return (
         <TemplateOrganism theme={theme}>
-            {data}
-            {/* <FeedOrganism data={data} /> */}
+            <FeedOrganism data={data} />
         </TemplateOrganism>
     );
 };

@@ -2,10 +2,10 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { routesName } from '../constants/routesName';
 import { HomeScreen } from '../scenes/Home';
 // import { DetailsScreen } from '../scenes/Details';
-import { blue } from '../themes';
+import { estaciona } from '../themes';
 import { navigationOptions } from '../router/NavigationOptions';
 
-const { defaultNavOptTheme } = blue;
+const { defaultNavOptTheme } = estaciona;
 
 export const HomeStack = createStackNavigator(
     {

@@ -1,9 +1,9 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import { routesName } from '../constants/routesName';
 import { SignInScreen } from '../scenes/Authentication/SignInScreen';
-// import { blue } from '../themes';
+// import { estaciona } from '../themes';
 
-// const { defaultNavOptTheme } = blue;
+// const { defaultNavOptTheme } = estaciona;
 export const AuthStack = createStackNavigator(
     {
         SignIn: {

@@ -1,21 +1,21 @@
-export const blue = {
+export const estaciona = {
     statusBarTheme: {
         barStyle: 'light-content',
     },
     safeAreaTheme: {
         flex: 1,
-        backgroundColor: '#3498db',
+        backgroundColor: '#F0F0F0',
     },
     keyboardViewTheme: {
         flex: 1,
     },
     containerTheme: {
         flex: 1,
-        backgroundColor: '#3498db',
+        backgroundColor: '#F0F0F0',
     },
     defaultNavOptTheme: {
         headerStyle: {
-            backgroundColor: '#3498db',
+            backgroundColor: '#7CAC5D',
             borderBottomWidth: 0,
         },
         headerTintColor: '#FFF',
@@ -23,6 +23,7 @@ export const blue = {
             fontWeight: 'bold',
         },
     },
+    //ANTIGO
     avatarTextTheme: {
         color: '#FFF',
         marginTop: 8,
@@ -43,6 +44,7 @@ export const blue = {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#7CAC5D'
     },
     logoTheme: {
         height: 100,
@@ -65,7 +67,7 @@ export const blue = {
             opacity: 0.8,
         },
         size: 24,
-        type: 'feather',
+        type: 'material',
         resizeMode: 'contain',
     },
     formContainerTheme: {
